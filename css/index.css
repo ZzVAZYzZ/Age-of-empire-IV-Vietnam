@@ -1168,3 +1168,11 @@ section #text{
         font-size: 2em;
     }
 }
+/* prefix width<375px */
+@media (max-width: 375px){
+    /* banner */
+    section #text{
+        width: 90%;
+        height: 65%;
+    }
+}
