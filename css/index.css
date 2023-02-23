@@ -37,12 +37,13 @@ body{
     display: block;;
 }
 .loader{
-    width: 1%;
-    margin: 0 auto;
-    padding-top: 40vh;
+    padding-top: 40px;
     position: relative;
 }
 .loader div:nth-child(1){
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
     position: absolute;
     width: 80px;
     height: 80px;
@@ -52,6 +53,9 @@ body{
     animation-delay: -0.5s;
 }
 .loader div:nth-child(2){
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
     position: absolute;
     width: 80px;
     height: 80px;
@@ -60,6 +64,9 @@ body{
     animation: spinner1 1s linear infinite;
 }
 .loader div:nth-child(3){
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
     position: absolute;
     width: 80px;
     height: 80px;
@@ -68,18 +75,7 @@ body{
     animation: spinner2 1s linear infinite;
     animation-delay: -0.5s;
 }
-.loader div:nth-child(4){
-    position: absolute;
-    top :52vh;
-    width: 90%;
-    font-size: 2.5em;
-    color: #dff9fb;
-    text-shadow: 0 0 10px #333,
-                0 0 20px #333,
-                0 0 40px #333,
-                0 0 80px #333,
-                0 0 120px #333;
-}
+
 @keyframes spinner1{
     0%{
         transform: translateX(0);
@@ -1174,5 +1170,9 @@ section #text{
     section #text{
         width: 90%;
         height: 65%;
+    }
+    /* footer */
+    #CONTACT_key ul li a {
+        font-size: 32px;
     }
 }

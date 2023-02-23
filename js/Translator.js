@@ -29,6 +29,27 @@ document.getElementById("VIETNAMESE_key").onclick = function(){
         document.getElementById("malian_civ_box_key").innerHTML="Mali";
         // contact
         document.getElementById("CONTACT_key").innerHTML="LIÊN HỆ";
+        // civ_popup_modal
+    // modal_civ_global
+    var i;
+    for(i=0;i<document.getElementsByClassName("modal_difficulty").length;i++){
+        document.getElementsByClassName("modal_difficulty")[i].innerHTML="Độ khó: ";
+    }
+    for(i=0;i<document.getElementsByClassName("modal_stability").length;i++){
+        document.getElementsByClassName("modal_stability")[i].innerHTML="Độ ổn định: ";
+    }
+    for(i=0;i<document.getElementsByClassName("modal_early_economy").length;i++){
+        document.getElementsByClassName("modal_early_economy")[i].innerHTML="Kinh tế đầu game: ";
+    }
+    for(i=0;i<document.getElementsByClassName("modal_early_military").length;i++){
+        document.getElementsByClassName("modal_early_military")[i].innerHTML="Quân sự đầu game: ";
+    }
+    for(i=0;i<document.getElementsByClassName("modal_late_economy").length;i++){
+        document.getElementsByClassName("modal_late_economy")[i].innerHTML="Kinh tế cuối game: ";
+    }
+    for(i=0;i<document.getElementsByClassName("modal_late_military").length;i++){
+        document.getElementsByClassName("modal_late_military")[i].innerHTML="Quân sự cuối game: ";
+    }
 };
 // ENGLISH
 document.getElementById("ENGLISH_key").onclick = function(){
@@ -43,7 +64,7 @@ document.getElementById("ENGLISH_key").onclick = function(){
     document.getElementById("EVENT_key1").innerHTML="TOURANAMENT";
     document.getElementById("LIBRARY_key1").innerHTML="LIBRARY";
     // Introduce_text
-    document.getElementById("INTRODUCE_TEXT_key").innerHTML="The largest Empire 4 community in Vietnam was established from June 2021 on Facebook under the name Age of Empires IV Vietnam, AOE4 is a real-time strategy game between the wars of different civilizations.<br><br>AOE4VN was created to connect with Vietnamese gamers, create a community of AOE4 lovers, this is a place for everyone to share AOE4's tactics and information.<br><br>Empire 4 Vietnam is always ready to welcome new members, whether they are beginners to RTS games or veterans from other RTS titles.<br><br>";
+    document.getElementById("INTRODUCE_TEXT_key").innerHTML="The largest Age of empire 4 community in Vietnam, which was established from June 2021 on Facebook, AOE4 is a real-time strategy game between the wars of different civilizations.<br><br>AOE4VN was created to connect with AOE4 Vietnamese gamers. This website is a place for everyone to share AOE4's tactics and information to help more newbies.AOE4VN always welcome new members,whether they are beginners to RTS games or veterans from other RTS games.<br><br> ";
     // introduce_box_buy_text
     document.getElementById("introduce_box_buy_text").innerHTML="BUY GAME: ";
     // library
