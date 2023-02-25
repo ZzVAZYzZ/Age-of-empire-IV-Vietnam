@@ -49,8 +49,8 @@ body{
     margin: 0 auto;
     transform: translate(-50%,-50%);
     position: absolute;
-    width: clamp(40px,5vw,80px);
-    height: clamp(40px,5vw,80px);
+    width: clamp(60px,5vw,80px);
+    height: clamp(60px,5vw,80px);
     border-radius: 100rem;
     background-color: #e17055;
     animation: spinner1 1s linear infinite;
@@ -63,8 +63,8 @@ body{
     margin: 0 auto;
     transform: translate(-50%,-50%);
     position: absolute;
-    width: clamp(40px,5vw,80px);
-    height: clamp(40px,5vw,80px);
+    width: clamp(60px,5vw,80px);
+    height: clamp(60px,5vw,80px);
     border-radius: 100rem;
     background-color: #fbc531;
     animation: spinner1 1s linear infinite;
@@ -76,37 +76,20 @@ body{
     margin: 0 auto;
     transform: translate(-50%,-50%);
     position: absolute;
-    width: clamp(40px,5vw,80px);
-    height: clamp(40px,5vw,80px);
+    width: clamp(60px,5vw,80px);
+    height: clamp(60px,5vw,80px);
     border-radius: 100rem;
     background-color: #e17055;
     animation: spinner2 1s linear infinite;
     animation-delay: -0.5s;
 }
-.loader div:nth-child(4){
-    top: 50vh;
-    left: 0;
-    right: 0;
-    position: absolute;
-    margin: 0 auto;
-    width: 30%;
-    animation: spinner1 3s linear infinite;
-    text-align: center;
-    font-size: clamp(12px,1.5vw,32px);
-    color: #c7ecee;
-    text-shadow: 0 0 10px #333,
-                0 0 20px #333,
-                0 0 40px #333,
-                0 0 80px #333,
-                0 0 120px #333;
-    transition: ease-in 0.1s;
-}
+
 @keyframes spinner1{
     0%{
         transform: translateX(0);
     }
     50%{
-        transform: translateX(clamp(40px,5vw,80px));
+        transform: translateX(clamp(60px,5vw,80px));
     }
     100%{
         transform: translateX(0);
@@ -118,11 +101,11 @@ body{
         opacity: 1;
     }
     49.99%{
-        transform: translateX(clamp(40px,5vw,80px));
+        transform: translateX(clamp(60px,5vw,80px));
         opacity: 1;
     }
     50%{
-        transform: translateX(clamp(40px,5vw,80px));
+        transform: translateX(clamp(60px,5vw,80px));
         opacity: 0;
     }
     100%{
