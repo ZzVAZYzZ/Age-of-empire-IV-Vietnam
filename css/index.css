@@ -83,6 +83,12 @@ body{
     animation: spinner2 1s linear infinite;
     animation-delay: -0.5s;
 }
+.loader div:nth-child(4){
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
 
 @keyframes spinner1{
     0%{
