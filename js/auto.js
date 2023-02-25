@@ -28,15 +28,33 @@ setInterval(function(){
     }
 },800)
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
-        }else{
-            entry.target.classList.remove("show");
-        }
-    });
-});
+scrolll = document.getElementsByClassName('scrollTo');
+scrolll[0].onclick = function(){
+    var element = document.getElementById('start');
+    element.scrollIntoView({behavior: "smooth"});
+};
+scrolll[1].onclick = function(){
+    var element = document.getElementById('introduce_wrapper');
+    element.scrollIntoView({behavior: "smooth"});
+};
+scrolll[2].onclick = function(){
+    var element = document.getElementById('event_wrapper');
+    element.scrollIntoView({behavior: "smooth"});
+};
+scrolll[3].onclick = function(){
+    var element = document.getElementById('library_wrapper');
+    element.scrollIntoView({behavior: "smooth"});
+};
 
-const hiddenEl = document.querySelectorAll('.hidden');
-hiddenEl.forEach((el) => observer.observe(el));
+// const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//         if(entry.isIntersecting){
+//             entry.target.classList.add("show");
+//         }else{
+//             entry.target.classList.remove("show");
+//         }
+//     });
+// });
+
+// const hiddenEl = document.querySelectorAll('.hidden');
+// hiddenEl.forEach((el) => observer.observe(el));

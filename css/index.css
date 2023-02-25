@@ -5,9 +5,6 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-html{
-    scroll-behavior: smooth;
-}
 body{
     background: #0a3d62;
     display: block;
@@ -29,6 +26,9 @@ body{
 }
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(transparent,#e67e22);
+}
+.scrollTo{
+    cursor: pointer;
 }
 /* Preloader */
 #preloader{
