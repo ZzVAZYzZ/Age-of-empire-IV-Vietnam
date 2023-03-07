@@ -31,14 +31,14 @@
     </div>
     <!-- Navbar -->
     <header id="navbar">
-        <div id="menu-toggle"><i class="fas fa-bars" id="open_icon" onclick="sclick()"></i><i class="fas fa-times" id="close_icon" onclick="xclick()"></i></div>
+        <div id="menu-toggle"><i class="fas fa-bars" id="open_icon" ></i><i class="fas fa-times" id="close_icon"></i></div>
         <nav id="nav-toggle">
             <ul>
                 <li class="scrollTo"><a  id="HOMEPAGE_key">TRANG CHỦ</a></li>
                 <li class="scrollTo"><a  id="INTRODUCE_key">GIỚI THIỆU</a></li>
                 <li class="scrollTo"><a  id="EVENT_key">GIẢI ĐẤU</a></li>
                 <li class="scrollTo"><a  id="LIBRARY_key">THƯ VIỆN</a></li>
-                <li id="lang_mobile_menu"><a>LANGUAGE</a></li>
+                <li id="lang_mobile_menu"><a>LANGUAGE <span>ES</span>/<span>VN</span></a></li>
             </ul>
         </nav>
         <div class="lang_menu">
@@ -52,15 +52,15 @@
     </header>
     <!-- Banner -->
     <section>
-        <img id="start" src="./img/carousel_start.webp">
-        <img id="sun"  src="./img/sun.webp">
-        <img id="middle"  src="./img/carousel_middle.webp">
-        <img id="text"  src="./img/AOEmoi2.webp">
-        <img id="end"  src="./img/carousel_end.webp">
+        <img id="start" src="./img/carousel_start.webp" alt="carousel-start">
+        <img id="sun"  src="./img/sun.webp" alt="carousel-sun">
+        <img id="middle"  src="./img/carousel_middle.webp" alt="carousel-middle">
+        <img id="text"  src="./img/AOEmoi2.webp" alt="carousel-text">
+        <img id="end"  src="./img/carousel_end.webp" alt="carousel-end">
     </section>
 
     <!-- Introduce -->
-      <div id="introduce_wrapper">
+    <div id="introduce_wrapper">
         <div class="content_wrapper">
             <h2 id="INTRODUCE_key1">GIỚI THIỆU</h2>
         </div>
@@ -92,16 +92,14 @@
         <div class="content_wrapper">
             <h2 id="EVENT_key1">GIẢI ĐẤU</h2>
         </div>
-        <div class="event_content">
-            <div class="tournament_text">
-                <a>
-                ĐĂNG KÝ : <br>
-                Vietnamese Championship
-                </a>
+        <div class="tournament_container">
+            <div class="tournament_solo">
+                <div class="tournament_title">VIETNAMESE CHAMPIONSHIP</div>
             </div>
-            <iframe loading="lazy" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FaoeIVvietnamfanpage%2Fvideos%2F639243293842016%2F&show_text=false&width=560&t=0"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            <div class="tournament_team">
+                <div class="tournament_title">TEAM CHAMPIONSHIP</div>
+            </div>   
         </div>
-        
     </div>
     <!-- Library -->
     <div id="library_wrapper" loading="lazy">
@@ -236,18 +234,95 @@
             <hr  color="#7ed6df" />
             <div class="landmark_title">Landmark</div>
             <div class="modal_civ_container_landmark">
-                </br>Đời II:  
-                </br>-Landmark Phòng Hội Đồng: là trường cung binh nhưng tốc độ sản xuất nhanh hơn 100%.
-                </br>-Landmark Tu Viện Của Các Đức Vua: Hồi 6 máu mỗi giây cho các đơn vị không chiến đấu quanh landmark và có thể tạo ra King. King(150 thực/150 vàng): là 1 kỵ binh nặng có thể hồi 2 máu mỗi giây cho các đơn vị xung quanh khi không chiến đấu.
-                </br></br>Đời III:
-                </br>-Landmark Cung Điện Nhà Vua: là một nhà chính.
-                </br>-Landmark Tòa Tháp Trắng: Là một thành lũy nhưng tốc độ sản xuất nhanh hơn 100%.
-                </br></br>Đời IV:
-                </br>-Landmark Cung Điện Berkshire: là một thành lũy nhưng tầm bắn rất xa và có thể bắn ra cung lửa.
-                </br>-Landmark Wynguard: Cho phép đào tạo ra những tẹp đơn vị đặc biệt.
-                </br></br>   
+                  <div class="slideshow-container">
+                        <div class="slide-wrapper-english">
+                            <div class="slide">
+                                <img src="img/english-landmark-1.webp">
+                                <div class="slideshow-galley">
+                                    <br>
+                                    <h2>Phòng Hội Đồng</br>(Đời II)</h2>
+                                    <br>
+                                    <p>
+                                        &nbsp;Là trường cung binh nhưng tốc độ sản xuất nhanh hơn 100%.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-wrapper-english">
+                            <div class="slide">
+                                <img src="img/english-landmark-2.webp">
+                                <div class="slideshow-galley">
+                                    <br>
+                                    <h2>Tu Viện Của Các Đức Vua</br>(Đời II)</h2>
+                                    <br>
+                                    <p>
+                                        &nbsp;Có thể hồi máu và tạo ra Vua.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-wrapper-english">
+                            <div class="slide">
+                                <img src="img/english-landmark-3.webp">
+                                <div class="slideshow-galley">
+                                    <br>
+                                    <h2>Cung Điện Nhà Vua</br>(Đời III)</h2>
+                                    <br>
+                                    <p>
+                                        &nbsp;Là một nhà chính.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-wrapper-english">
+                            <div class="slide">
+                                <img src="img/english-landmark-4.webp">
+                                <div class="slideshow-galley">
+                                    <br>
+                                    <h2>Tòa Tháp Trắng</br>(Đời III)</h2>
+                                    <br>
+                                    <p>
+                                        &nbsp;Là một thành lũy nhưng tốc độ sản xuất nhanh hơn 100%.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-wrapper-english">
+                            <div class="slide">
+                                <img src="img/english-landmark-5.webp">
+                                <div class="slideshow-galley">
+                                    <br>
+                                    <h2>Wynguard</br>(Đời IV)</h2>
+                                    <br>
+                                    <p>
+                                        &nbsp;Cho phép đào tạo ra những tẹp đơn vị đặc biệt.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-wrapper-english">
+                            <div class="slide">
+                                <img src="img/english-landmark-6.webp">
+                                <div class="slideshow-galley">
+                                    <br>
+                                    <h2>Cung Điện Berkishre</br>(Đời IV)</h2>
+                                    <br>
+                                    <p>
+                                        &nbsp;Là một thành lũy nhưng tầm bắn rất xa và có thể bắn ra cung lửa.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow-left">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="arrow-right">
+                            <div></div>
+                            <div></div>
+                        </div>
+                  </div>
             </div>
-            </br>
             <hr  color="#7ed6df"/>
             <div class="overview_title">Tổng Quan</div>
             </br>
@@ -336,18 +411,95 @@
             <hr  color="#3498db" />
             <div class="landmark_title">Landmark</div>
             <div class="modal_civ_container_landmark">
-                </br>Đời II:  
-                </br>-Landmark Trường Đào Tạo Kỵ Binh: Là chuồng ngựa  nhưng tốc độ sản xuất nhanh hơn 20%.
-                </br>-Landmark Phòng Thương Mại: Là chợ, mỗi khi hoàn thành 1 công nghệ kinh tế sẽ tạo ra miễn phí 1 thương nhân.
-                </br></br>Đời III:
-                </br>-Landmark Học Viện Hoàng Gia: Tất cả công nghệ đặc biệt của Pháp đều có thể nâng cấp mà không phụ thuộc vào đời bắt buộc. Ngoài ra còn được giảm giá 30% chi phí nghiên cứu.
-                </br>-Landmark Phòng Khánh Tiết: Lưu trữ 1 loại tài nguyên theo thời gian, tài nguyên lưu trữ càng nhiều thì tốc đổ lưu trữ càng nhanh. Có thể chuyển đổi giữa thực, gỗ, vàng, đá.
-                </br></br>Đời IV:
-                </br>-Landmark Cung Điện Đỏ: là một thành lũy nhưng thay vì bắn ra cung thì bắn ra nỏ.
-                </br>-Landmark Đại Học Pháo Binh: Là xưởng vũ khí công thành nhưng sẽ tăng thêm 20% sức tấn công của xe khi tạo ra.
-                </br></br>   
+                  <div class="slideshow-container">
+                        <div class="slide-wrapper-french">
+                            <div class="slide">
+                                <img src="img/french-landmark-1.webp">
+                                <div class="slideshow-galley">
+                                    <br>
+                                    <h2>Trường Đào Tạo Kỵ Binh</br>(Đời II)</h2>
+                                    <br>
+                                    <p>
+                                        &nbsp;Là nhà kỵ binh nhưng tốc độ sản xuất nhanh hơn 30%.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-wrapper-french">
+                            <div class="slide">
+                                <img src="img/french-landmark-2.webp">
+                                <div class="slideshow-galley">
+                                    <br>
+                                    <h2>Phòng Thương Mại</br>(Đời II)</h2>
+                                    <br>
+                                    <p>
+                                        &nbsp;Là chợ, mỗi khi hoàn thành 1 nâng cấp kinh tế sẽ tạo 1 thương nhân miễn phí.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-wrapper-french">
+                            <div class="slide">
+                                <img src="img/french-landmark-3.webp">
+                                <div class="slideshow-galley">
+                                    <br>
+                                    <h2>Phòng Khánh Tiết</br>(Đời III)</h2>
+                                    <br>
+                                    <p>
+                                        &nbsp;Có thể tích trữ tài nguyên, thời gian càng lâu tài nguyên càng nhiều.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-wrapper-french">
+                            <div class="slide">
+                                <img src="img/french-landmark-4.webp">
+                                <div class="slideshow-galley">
+                                    <br>
+                                    <h2>Học Viện Hoàng Gia</br>(Đời III)</h2>
+                                    <br>
+                                    <p>
+                                        &nbsp;Tất cả nâng cấp đặc biệt được mở và rẻ hơn 30%.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-wrapper-french">
+                            <div class="slide">
+                                <img src="img/french-landmark-5.webp">
+                                <div class="slideshow-galley">
+                                    <br>
+                                    <h2>Đại Học Pháo Binh</br>(Đời IV)</h2>
+                                    <br>
+                                    <p>
+                                        &nbsp;Là nhà pháo binh nhưng tốc độ nghiên cứu, sản xuất hơn 50% và sát thương hơn 30%. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-wrapper-french">
+                            <div class="slide">
+                                <img src="img/french-landmark-6.webp">
+                                <div class="slideshow-galley">
+                                    <br>
+                                    <h2>Cung Điện Đỏ</br>(Đời IV)</h2>
+                                    <br>
+                                    <p>
+                                        &nbsp;Là một thành lũy, tất cả lâu đài và nhà chính đều bắn ra nỏ.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow-left">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="arrow-right">
+                            <div></div>
+                            <div></div>
+                        </div>
+                  </div>
             </div>
-            </br>
             <hr  color="#3498db"/>
             <div class="overview_title">Tổng Quan</div>
             </br>
