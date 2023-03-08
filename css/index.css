@@ -747,7 +747,7 @@ section #text{
     padding: clamp(10px,1.5vw,100px);
     position: relative;  
 }
-.slide-wrapper-english,.slide-wrapper-french{
+.slide-wrapper-english,.slide-wrapper-french,.slide-wrapper-hre,.slide-wrapper-rus{
     display: none;
 }
 .slide{
@@ -756,9 +756,9 @@ section #text{
     justify-content: center;
 }
 .slide img{
-    width: clamp(100px,30vw,550px);
+    width: clamp(120px,30vw,570px);
     height: clamp(100px,30vw,550px);
-    border-radius: 32% 0% 0% 32% / 100% 0% 0% 100%;
+    /* border-radius: 32% 0% 0% 32% / 100% 0% 0% 100%; */
     border-top: 2px solid #55efc4;
     border-left: 2px solid #55efc4;
     border-bottom: 2px solid #55efc4;
@@ -770,18 +770,20 @@ section #text{
     display: flex;
     flex-direction: column;
     color: #333;
-    border-radius: 0% 32% 32% 0% / 100% 100% 100% 100%;
+    /* border-radius: 0% 32% 32% 0% / 100% 100% 100% 100%; */
     border-top: 2px solid #55efc4;
     border-right: 2px solid #55efc4;
     border-bottom: 2px solid #55efc4;
 }
 .slideshow-galley h2{
     text-align: center;
-    font-size: clamp(10px,1.5vw,32px);
+    font-size: clamp(6px,1.5vw,28px);
+    color: #333;
 }
 .slideshow-galley p{
     padding: clamp(5px,1vw,50px);
-    font-size: clamp(8px,1.5vw,28px);
+    font-size: clamp(6px,1.5vw,24px);
+    color: #333;
 }
 .arrow-left{
     cursor: pointer;
@@ -790,7 +792,7 @@ section #text{
     left: 0;
     border-top: clamp(10px,2.5vw,30px) solid transparent;
     border-bottom: clamp(10px,2.5vw,30px) solid transparent;
-    border-right: clamp(10px,2.5vw,30px) solid #dff9fb;
+    border-right: clamp(10px,2.5vw,30px) solid #95afc0;
 }
 .arrow-left:hover{
     border-right: clamp(10px,2.5vw,30px) solid #eb4d4b;
@@ -803,7 +805,7 @@ section #text{
     right: 0;
     border-top: clamp(10px,2.5vw,30px) solid transparent;
     border-bottom: clamp(10px,2.5vw,30px) solid transparent;
-    border-left: clamp(10px,2.5vw,30px) solid #dff9fb;
+    border-left: clamp(10px,2.5vw,30px) solid #95afc0;
 }
 .arrow-right:hover{
     border-left: clamp(10px,2.5vw,30px) solid #eb4d4b;
