@@ -684,6 +684,7 @@ section #text{
     font-size: 0.9em;
     width: 80%;
     margin: 0 auto;
+    padding: 1em 0;
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
@@ -699,6 +700,7 @@ section #text{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
+    padding: 1em 0;
 
 }
 .modal_civ_container_special_bonus{
@@ -747,7 +749,7 @@ section #text{
     padding: clamp(10px,1.5vw,100px);
     position: relative;  
 }
-.slide-wrapper-english,.slide-wrapper-french,.slide-wrapper-hre,.slide-wrapper-rus{
+.slide-wrapper-english,.slide-wrapper-french,.slide-wrapper-hre,.slide-wrapper-rus,.slide-wrapper-chinese,.slide-wrapper-mongol{
     display: none;
 }
 .slide{
@@ -762,6 +764,8 @@ section #text{
     border-top: 2px solid #55efc4;
     border-left: 2px solid #55efc4;
     border-bottom: 2px solid #55efc4;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 .slideshow-galley{
     width: clamp(100px,30vw,550px);
@@ -774,6 +778,8 @@ section #text{
     border-top: 2px solid #55efc4;
     border-right: 2px solid #55efc4;
     border-bottom: 2px solid #55efc4;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 .slideshow-galley h2{
     text-align: center;
@@ -829,6 +835,7 @@ section #text{
     margin: 0 auto;
     font-size: 0.6em;
     text-align: left;
+    padding: 1em 0;
 }
 .modal_basicTactic_title{
     text-shadow: 0 0 10px #333,
