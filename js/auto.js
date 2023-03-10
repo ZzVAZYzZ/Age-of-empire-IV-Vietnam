@@ -20,7 +20,7 @@ var slideShowGalley=[];
 for(var i = 0; i<6; i ++){
     slideShowGalley[i] = document.getElementsByClassName('slide')[i];
 }
-var slideShowGalleyWrapperEnglish=[], slideShowGalleyWrapperFrench=[], slideShowGalleyWrapperHre=[],slideShowGalleyWrapperRus=[], slideShowGalleyWrapperChinese=[], slideShowGalleyWrapperMongol=[];
+var slideShowGalleyWrapperEnglish=[], slideShowGalleyWrapperFrench=[], slideShowGalleyWrapperHre=[],slideShowGalleyWrapperRus=[], slideShowGalleyWrapperChinese=[], slideShowGalleyWrapperMongol=[], slideShowGalleyWrapperDelhi=[];
 for(var i = 0; i<6; i ++){
     slideShowGalleyWrapperEnglish[i] = document.getElementsByClassName('slide-wrapper-english')[i];
     slideShowGalleyWrapperFrench[i] = document.getElementsByClassName('slide-wrapper-french')[i];
@@ -28,11 +28,12 @@ for(var i = 0; i<6; i ++){
     slideShowGalleyWrapperRus[i] = document.getElementsByClassName('slide-wrapper-rus')[i];
     slideShowGalleyWrapperChinese[i] = document.getElementsByClassName('slide-wrapper-chinese')[i];
     slideShowGalleyWrapperMongol[i] = document.getElementsByClassName('slide-wrapper-mongol')[i];
+    slideShowGalleyWrapperDelhi[i] = document.getElementsByClassName('slide-wrapper-delhi')[i];
 }
 
 var arrowLeft = document.getElementsByClassName('arrow-left'); 
 var arrowRight = document.getElementsByClassName('arrow-right');
-var keyEnglish = 0,keyFrench = 0,keyHre = 0,keyRus = 0,keyChinese = 0,keyMongol=0;
+var keyEnglish = 0,keyFrench = 0,keyHre = 0,keyRus = 0,keyChinese = 0,keyMongol=0,keyDelhi=0;
 if(keyEnglish==0){
     slideShowGalleyWrapperEnglish[0].style.display = "block";
     slideShowGalleyWrapperFrench[0].style.display = "block";
@@ -40,6 +41,7 @@ if(keyEnglish==0){
     slideShowGalleyWrapperRus[0].style.display = "block";
     slideShowGalleyWrapperChinese[0].style.display = "block";
     slideShowGalleyWrapperMongol[0].style.display = "block";
+    slideShowGalleyWrapperDelhi[0].style.display = "block";
 }
 
 // English
@@ -261,6 +263,43 @@ arrowLeft[5].onclick = function(){
     for(var i=0;i<6;i++){
         if(keyMongol==i){
             slideShowGalleyWrapperMongol[i].style.display = "block";
+        }
+    }
+}
+// delhi
+arrowRight[6].onclick = function(){
+    
+    for(var i=0;i<6;i++){
+        if(keyDelhi==i){
+            slideShowGalleyWrapperDelhi[i].style.display = "none";
+        }
+    }
+    keyDelhi++;
+    if(keyDelhi>5){
+        keyDelhi=0;
+    }
+    
+    for(var i=0;i<6;i++){
+        if(keyDelhi==i){
+            slideShowGalleyWrapperDelhi[i].style.display = "block";
+        }
+    }
+}
+
+arrowLeft[6].onclick = function(){
+    
+    for(var i=0;i<6;i++){
+        if(keyDelhi==i){
+            slideShowGalleyWrapperDelhi[i].style.display = "none";
+        }
+    }
+    keyDelhi--;
+    if(keyDelhi<0){
+        keyDelhi=5;
+    }
+    for(var i=0;i<6;i++){
+        if(keyDelhi==i){
+            slideShowGalleyWrapperDelhi[i].style.display = "block";
         }
     }
 }

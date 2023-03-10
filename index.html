@@ -92,13 +92,51 @@
         <div class="content_wrapper">
             <h2 id="EVENT_key1">GIẢI ĐẤU</h2>
         </div>
-        <div class="tournament_container">
-            <div class="tournament_solo">
-                <div class="tournament_title">VIETNAMESE CHAMPIONSHIP</div>
+        <div id="tournament_container">
+            <div id="tournament_main">
+                <div id="tournament_solo_box"></div>
+                <div id="tournament_solo_name">
+                    <a>VIETNAM CHAMPIONSHIP</a>
+                </div>
+                <div id="tournament_team_box"></div>
+                <div id="tournament_team_name">
+                    <a>
+                        CLAN WAR
+                    </a>
+                </div>
             </div>
-            <div class="tournament_team">
-                <div class="tournament_title">TEAM CHAMPIONSHIP</div>
-            </div>   
+            <div id="tournament_solo_main">
+                <div class="tournament-back"><i class="fas fa-times"></i> <span>BACK</span></div>
+                <div class="tournament_solo_main_box"></div>
+                <div class="tournament_solo_main_name">VIETNAM CHAMPIONSHIP</div>
+                <div class="tournament_solo_sub">
+                    <p>
+                        Giải đấu thế thức 1v1 lớn nhất ở Việt Nam 1 năm 1 lần với tổng giá trị có thể lên đến 50.000.000VND
+                        <br><br>
+                        Ngày:??/??/2023
+                        <br>
+                        Thời Gian Đăng Ký:??/??-??/??
+                    </p>
+                    <button>Đăng Ký</button>
+                    <div class="detail"><a>...Chi tiết</a></div>
+                </div>
+            </div>
+            <div id="tournament_team_main">
+                <div class="tournament-back"><i class="fas fa-times"></i> <span>BACK</span></div>
+                <div class="tournament_team_main_box"></div>
+                <div class="tournament_team_main_name">CLAN WAR</div>
+                <div class="tournament_team_sub">
+                    <p>
+                        Giải đấu thế thức team lớn nhất ở Việt Nam với các đội là các Clan lớn chiến đấu với nhau giành lấy giải thưởng
+                        <br><br>
+                        Ngày:??/??/2023
+                        <br>
+                        Thời Gian Đăng Ký:??/??-??/??
+                    </p>
+                    <button>Đăng Ký</button>
+                    <div class="detail"><a>...Chi tiết</a></div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Library -->
@@ -1228,7 +1266,6 @@
                         <div></div>
                     </div>
               </div>
-                </br></br>   
             </div>
             <hr  color="#0984e3"/>
             <div class="overview_title">Tổng Quan</div>
@@ -1307,18 +1344,95 @@
             <hr  color="#27ae60" />
             <div class="landmark_title">Landmark</div>
             <div class="modal_civ_container_landmark">
-                </br>Đời II:  
-                </br>-Landmark Đá Hưu: tăng 15% tốc độ di chuyển cho tất cả đơn vị trong phạm vi ảnh hưởng.
-                </br>-Landmark Cây Bạc: là chợ, tốc độ ra thương nhân nhanh hơn 50% và giảm 50% chi phí vàng.
-                </br></br>Đời III:
-                </br>-Landmark Tháp Đồng Hồ Thiên Văn: là xưởng vũ khí công thành, tất cả cơ giới công thành từ landmark này tạo ra được tăng thêm 50% máu.
-                </br>-Landmark Hoàng Cung: Có bán kính quan sát lớn như tiền đồn nhưng không thể bắn hoặc đồn trú, có kỹ năng phát hiện tất cả dân làng hoặc thương nhân của đối phương trong 10 giây.
-                </br></br>Đời IV:
-                </br>-Landmark Buồng Canh Trên Vạn Lý Trường Thành: là cổng đá nhưng được lắp 1 Oa phong, tăng 25% sát thương tầm xa cho tất cả đơn vị trên tường thành
-                </br>-Landmark Con Đường Linh Thiêng: Cung cấp các công nghệ đặc biệt liên quan đến triều đại, và cho tất cả đơn vị quân sự khả năng hồi 20 máu và 20% tốc độ tấn công trong 10 giây
-                </br></br>   
+                <div class="slideshow-container">
+                    <div class="slide-wrapper-delhi">
+                        <div class="slide">
+                            <img src="img/delhi-landmark-1.webp">
+                            <div class="slideshow-galley">
+                                <br>
+                                <h2>Mái Vòm Đức Tin</br>(Đời II)</h2>
+                                <br>
+                                <p>
+                                    &nbsp;Là tu viện, sản xuất học chậm hơn 50% nhưng rẻ hơn 40%.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-wrapper-delhi">
+                        <div class="slide">
+                            <img src="img/delhi-landmark-2.webp">
+                            <div class="slideshow-galley">
+                                <br>
+                                <h2>Tòa Tháp Chiến Thắng</br>(Đời II)</h2>
+                                <br>
+                                <p>
+                                    &nbsp;Tất cả lính bộ binh sẽ được tăng 20% tốc độ đánh nếu được sản xuất từ các nhà lính có kết nối với landmark này.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-wrapper-delhi">
+                        <div class="slide">
+                            <img src="img/delhi-landmark-3.webp">
+                            <div class="slideshow-galley">
+                                <br>
+                                <h2>Ngôi Nhà Học Tập</br>(Đời III)</h2>
+                                <br>
+                                <p>
+                                    &nbsp;Mang đến những công nghệ đặc biệt.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-wrapper-delhi">
+                        <div class="slide">
+                            <img src="img/delhi-landmark-4.webp">
+                            <div class="slideshow-galley">
+                                <br>
+                                <h2>Hợp Nhất Phòng Thủ</br>(Đời III)</h2>
+                                <br>
+                                <p>
+                                    &nbsp;Tất cả công trình phòng thủ đều được giảm 25% chi phí đá. Có thể nghiên trước 4 công nghệ.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-wrapper-delhi">
+                        <div class="slide">
+                            <img src="img/delhi-landmark-5.webp">
+                            <div class="slideshow-galley">
+                                <br>
+                                <h2>Cung Điện Quốc Vương</br>(Đời IV)</h2>
+                                <br>
+                                <p>
+                                    &nbsp;Tạo ra những con voi với súng cầm tay ở trên. Có thể thêm 4 nhà sư vào để sản xuất nhanh hơn.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-wrapper-delhi">
+                        <div class="slide">
+                            <img src="img/delhi-landmark-6.webp">
+                            <div class="slideshow-galley">
+                                <br>
+                                <h2>Học Viện Hisar</br>(Đời IV)</h2>
+                                <br>
+                                <p>
+                                    &nbsp;Ứng với mỗi công nghệ đã nghiên cứu sẽ cho ra 1 thịt mỗi 5 giây.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-left">
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="arrow-right">
+                        <div></div>
+                        <div></div>
+                    </div>
+              </div> 
             </div>
-            </br>
             <hr  color="#27ae60"/>
             <div class="overview_title">Tổng Quan</div>
             <div class="modal_civ_container_overview">
@@ -1528,6 +1642,8 @@
     <script type="text/javascript" src="./js/Civ popup modal.js"></script>
     <script type="text/javascript" src="./js/preloader.js"></script>
     <script type="text/javascript" src="./js/auto.js"></script>
+    <script type="text/javascript" src="./js/event.js"></script>
+
 
 </body>
 </html>
