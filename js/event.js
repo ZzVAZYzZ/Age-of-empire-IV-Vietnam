@@ -17,6 +17,8 @@ tournamentTeamText.onclick = function(){
     },2000); 
 };
 function fadeInDown(x){
+    tournamentSoloMain.style.display="none";
+    tournamentTeamMain.style.display="none"
     x.style.display="block";
     x.classList.remove('fade-out-up')
     x.classList.add('fade-in-down');
