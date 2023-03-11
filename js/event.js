@@ -64,3 +64,4 @@ turnBackTournament[1].onclick = function(){
         tournament.style.display = "block";
     },2000)
 }
+// open tournament modal

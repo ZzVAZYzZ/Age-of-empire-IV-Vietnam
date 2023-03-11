@@ -1022,7 +1022,7 @@ section #text{
     padding: clamp(10px,1.5vw,100px);
     position: relative;  
 }
-.slide-wrapper-english,.slide-wrapper-french,.slide-wrapper-hre,.slide-wrapper-rus,.slide-wrapper-chinese,.slide-wrapper-mongol,.slide-wrapper-delhi{
+.slide-wrapper-english,.slide-wrapper-french,.slide-wrapper-hre,.slide-wrapper-rus,.slide-wrapper-chinese,.slide-wrapper-mongol,.slide-wrapper-delhi,.slide-wrapper-ottoman,.slide-wrapper-malian,.slide-wrapper-abbasid{
     display: none;
 }
 .slide{
